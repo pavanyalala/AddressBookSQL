@@ -34,3 +34,10 @@ Delete from AddressBook Where FirstName='Bunty'
 /*UC-6*/
 
 Select * From AddressBook Where City='Hyderabad' or State='Telangana'
+
+/*UC-7*/
+
+Select Count(City) as 'NumberOfContacts' from AddressBook Where City='Hyderabad' Group by City
+
+
+
