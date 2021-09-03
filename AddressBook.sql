@@ -26,3 +26,8 @@ Insert into AddressBook (FirstName,LastName,Address,City,State,Zip,PhoneNumber,E
 Update AddressBook Set Address='Ecil' Where FirstName='Bunny'
 Update AddressBook Set Address='Dammiguda' Where FirstName='Sunny'
 Update AddressBook Set Address='OldCity' Where FirstName='Bunty'
+
+/*UC-5*/
+
+Delete from AddressBook Where FirstName='Bunty'
+
