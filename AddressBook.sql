@@ -31,3 +31,6 @@ Update AddressBook Set Address='OldCity' Where FirstName='Bunty'
 
 Delete from AddressBook Where FirstName='Bunty'
 
+/*UC-6*/
+
+Select * From AddressBook Where City='Hyderabad' or State='Telangana'
