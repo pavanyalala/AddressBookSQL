@@ -14,3 +14,9 @@ PhoneNumber bigint not null,
 Email varchar(20)not null
 )
 Select * From AddressBook
+
+/*UC-3*/
+
+Insert into AddressBook (FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) values('Bunny', 'ABC', 'Dammiguda', 'Hyderabad', 'Telangana', '500083', '1111111111', 'bunny@gmail.com')
+Insert into AddressBook (FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) values('Sunny', 'CBA', 'Ecil', 'Hyderabad', 'Telangana', '500083', '2222222222', 'sunny@gmail.com')
+Insert into AddressBook (FirstName,LastName,Address,City,State,Zip,PhoneNumber,Email) values('Bunty', 'ABCD', 'Nagole', 'Hyderabad', 'Telangana', '500068', '3333333333', 'bunty@gmail.com')
