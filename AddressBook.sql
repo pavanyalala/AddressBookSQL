@@ -39,5 +39,8 @@ Select * From AddressBook Where City='Hyderabad' or State='Telangana'
 
 Select Count(City) as 'NumberOfContacts' from AddressBook Where City='Hyderabad' Group by City
 
+/*UC-8*/
+
+Select * From AddressBook Where City='Hyderabad' Order by FirstName desc
 
 
