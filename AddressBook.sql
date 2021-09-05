@@ -118,4 +118,29 @@ select * from ContactDetails
 Select * From ContactDetails cd, Address a, ContactType ct
 Where cd.AddressId=a.AddressId And cd.ContactTypeId=ct.ContactTypeId
 
+/*UC-13*/
 
+Select * From ContactDetails
+Join Address                                                         
+on ContactDetails.AddressId=Address.AddressId
+Where City='Nagole' or State='TS'
+
+Select Count(FirstName) as 'NumberOfContacts' from ContactDetails
+Join Address 
+on ContactDetails.AddressId=Address.AddressId 
+Where City='Hyd' Group by City
+
+Select Count(FirstName) as 'NumberOfContacts' from ContactDetails
+Join Address 
+on ContactDetails.AddressId=Address.AddressId
+Where State='TS' Group by State
+
+Select * From ContactDetails 
+Join Address 
+on ContactDetails.AddressId=Address.AddressId                                 
+Where City='Hyd' Order by FirstName 
+
+Select Count(FirstName) as 'NumberOfContacts' from ContactDetails
+Join ContactType 
+on ContactDetails.ContactTypeId=ContactType.ContactTypeId                    
+Where ContactTypeName='Friend' Group by ContactTypeName
