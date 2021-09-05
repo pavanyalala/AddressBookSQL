@@ -60,6 +60,12 @@ Select Count(AddressBookType)As 'NumberOfContacts' From AddressBook Where Addres
 
 Select Count(AddressBookType)As 'NumberOfContacts' From AddressBook Where AddressBookType='Proffesion'
 
+/*UC-11*/
+
+Insert into AddressBook values
+('Funny', 'XYZ', 'Kothapet', 'Hyderabad', 'Telangana', '500085', '4444444444', 'funny@gmail', 'Friend AddressBook', 'Friend'),
+('Honey', 'ZYX', 'Kokapet', 'Hyderabad', 'Telangana', '500036', '5555555555', 'honey@gmail', 'Family AddressBook', 'Family')
+
 
 
 
