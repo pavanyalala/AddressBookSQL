@@ -52,6 +52,14 @@ Update AddressBook set AddressBookName='Family AddressBook', AddressBookType='Fa
 Update AddressBook set AddressBookName='Friend AddressBook', AddressBookType='Friend' Where FirstName='Sunny'
 Update AddressBook set AddressBookName='Proffesion AddressBook', AddressBookType='Proffesion' Where FirstName='Bunty'
 
+/*UC-10*/
+
+Select Count(AddressBookType)As 'NumberOfContacts' From AddressBook Where AddressBookType='Family'
+
+Select Count(AddressBookType)As 'NumberOfContacts' From AddressBook Where AddressBookType='Friend'
+
+Select Count(AddressBookType)As 'NumberOfContacts' From AddressBook Where AddressBookType='Proffesion'
+
 
 
 
