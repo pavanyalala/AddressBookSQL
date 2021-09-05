@@ -41,6 +41,18 @@ Select Count(City) as 'NumberOfContacts' from AddressBook Where City='Hyderabad'
 
 /*UC-8*/
 
-Select * From AddressBook Where City='Hyderabad' Order by FirstName desc
+Select * From AddressBook Where City='Hyderabad' Order by FirstName
+ 
+/*UC-9*/
+
+Alter Table AddressBook 
+Add AddressBookName varchar(30), AddressBookType varchar(30)
+
+Update AddressBook set AddressBookName='Family AddressBook', AddressBookType='Family' Where FirstName='Bunny'
+Update AddressBook set AddressBookName='Friend AddressBook', AddressBookType='Friend' Where FirstName='Sunny'
+Update AddressBook set AddressBookName='Proffesion AddressBook', AddressBookType='Proffesion' Where FirstName='Bunty'
+
+
+
 
 
